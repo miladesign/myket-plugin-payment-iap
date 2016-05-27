@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="myket-plugin-payment-iap"
+    version="1.0.0">
+
+	<name>Myket IAP plugin</name>
+    <description>Myket IAP plugin</description>
+    <author>Milad Mohammadi</author>		
+    <license>MIT</license>
+    <keywords>myket,plugin,payment,IAP</keywords>
+    <repo>https://github.com/miladesign/myket-plugin-payment-iap</repo>
+    <issue>https://github.com/miladesign/myket-plugin-payment-iap/issues</issue>
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+    <js-module src="www/iap.js" name="iap">
+        <clobbers target="window.iap" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">    
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="IAP" >
+				<param name="android-package" value="jp.wizcorp.phonegap.plugin.wizPurchase.IAP"/>
+			</feature>
+	    </config-file>
+	    
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="ir.mservices.market.BILLING" />
+        </config-file>		
+		
+	    <source-file src="src/android/IAP.java" target-dir="src/jp/wizcorp/phonegap/plugin/wizPurchase"/>
+	            
+	    <source-file src="src/android/Base64.java" target-dir="src/com/smartmobilesoftware/util"/>
+	    <source-file src="src/android/Base64DecoderException.java" target-dir="src/com/smartmobilesoftware/util"/>
+	    <source-file src="src/android/IabException.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/IabHelper.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/IabResult.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/Inventory.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/Purchase.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/Security.java" target-dir="src/com/smartmobilesoftware/util"/>
+		<source-file src="src/android/SkuDetails.java" target-dir="src/com/smartmobilesoftware/util"/>              
+	    <source-file src="src/android/IInAppBillingService.aidl" target-dir="src/com/android/vending/billing"/>
+    </platform>
+	
+</plugin>

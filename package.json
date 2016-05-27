@@ -1,0 +1,35 @@
+{
+  "name": "myket-plugin-payment-iap",
+  "version": "1.0.0",
+  "description": "Myket IAP plugin",
+  "cordova": {
+    "id": "myket-plugin-payment-iap",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miladesign/myket-plugin-payment-iap.git"
+  },
+  "keywords": [
+    "myket",
+    "plugin",
+    "payment",
+    "IAP",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Milad Mohammadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miladesign/myket-plugin-payment-iap/issues"
+  },
+  "homepage": "https://github.com/miladesign/myket-plugin-payment-iap#readme"
+}
