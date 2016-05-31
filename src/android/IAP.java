@@ -1,4 +1,4 @@
-package jp.wizcorp.phonegap.plugin.wizPurchase;
+package ir.myket.miladesign;
 
 //
 import org.apache.cordova.CordovaPlugin;
@@ -12,11 +12,6 @@ import org.apache.cordova.CordovaWebView;
 import android.app.Activity;
 import android.util.Log;
 
-//JSON Includes
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 //Android Includes
 import android.content.Intent;
 
@@ -26,11 +21,11 @@ import java.util.Iterator;
 import java.util.List;
 
 //Java Smart Mobile Includes
-import com.smartmobilesoftware.util.Purchase;
-import com.smartmobilesoftware.util.IabHelper;
-import com.smartmobilesoftware.util.IabResult;
-import com.smartmobilesoftware.util.Inventory;
-import com.smartmobilesoftware.util.SkuDetails;
+import ir.myket.miladesign.utilfiles.Purchase;
+import ir.myket.miladesign.utilfiles.IabHelper;
+import ir.myket.miladesign.utilfiles.IabResult;
+import ir.myket.miladesign.utilfiles.Inventory;
+import ir.myket.miladesign.utilfiles.SkuDetails;
 
 /**
  * WizPurchasePlugin Plug-in

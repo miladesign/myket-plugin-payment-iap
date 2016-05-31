@@ -23,7 +23,7 @@
     <platform name="android">    
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="IAP" >
-				<param name="android-package" value="jp.wizcorp.phonegap.plugin.wizPurchase.IAP"/>
+				<param name="android-package" value="ir.myket.miladesign.IAP"/>
 			</feature>
 	    </config-file>
 	    
@@ -31,18 +31,8 @@
 			<uses-permission android:name="ir.mservices.market.BILLING" />
         </config-file>		
 		
-	    <source-file src="src/android/IAP.java" target-dir="src/jp/wizcorp/phonegap/plugin/wizPurchase"/>
-	            
-	    <source-file src="src/android/Base64.java" target-dir="src/com/smartmobilesoftware/util"/>
-	    <source-file src="src/android/Base64DecoderException.java" target-dir="src/com/smartmobilesoftware/util"/>
-	    <source-file src="src/android/IabException.java" target-dir="src/com/smartmobilesoftware/util"/>
-		<source-file src="src/android/IabHelper.java" target-dir="src/com/smartmobilesoftware/util"/>
-		<source-file src="src/android/IabResult.java" target-dir="src/com/smartmobilesoftware/util"/>
-		<source-file src="src/android/Inventory.java" target-dir="src/com/smartmobilesoftware/util"/>
-		<source-file src="src/android/Purchase.java" target-dir="src/com/smartmobilesoftware/util"/>
-		<source-file src="src/android/Security.java" target-dir="src/com/smartmobilesoftware/util"/>
-		<source-file src="src/android/SkuDetails.java" target-dir="src/com/smartmobilesoftware/util"/>              
-	    <source-file src="src/android/IInAppBillingService.aidl" target-dir="src/com/android/vending/billing"/>
+		<source-file src="src/android/IAP.java" target-dir="src/ir.myket.miladesign"/>
+		<source-file src="src/android/MdMyket.jar" target-dir="libs" />
     </platform>
 	
 </plugin>
